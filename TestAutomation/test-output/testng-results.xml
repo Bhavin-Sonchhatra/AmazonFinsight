@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="38631" started-at="2020-09-10T08:16:41Z" finished-at="2020-09-10T08:17:20Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="38631" started-at="2020-09-10T08:16:41Z" finished-at="2020-09-10T08:17:20Z">
+      <class name="amazon.TestAutomation.AppTest">
+        <test-method status="PASS" signature="suiteSetup()[pri:0, instance:amazon.TestAutomation.AppTest@29774679]" name="suiteSetup" is-config="true" duration-ms="4683" started-at="2020-09-10T13:46:36Z" finished-at="2020-09-10T13:46:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteSetup -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:amazon.TestAutomation.AppTest@29774679]" name="beforeTest" is-config="true" duration-ms="11002" started-at="2020-09-10T13:46:41Z" finished-at="2020-09-10T13:46:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:amazon.TestAutomation.AppTest@29774679]" name="login" duration-ms="17039" started-at="2020-09-10T13:46:54Z" data-provider="LoginData" finished-at="2020-09-10T13:47:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testautomationamazon@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="verifyAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:amazon.TestAutomation.AppTest@29774679]" name="verifyAddress" duration-ms="4395" started-at="2020-09-10T13:47:12Z" data-provider="AddressData" depends-on-methods="amazon.TestAutomation.AppTest.login" finished-at="2020-09-10T13:47:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestHome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9922113344]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[411041]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ABC desilva]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Link Road, Pune,Maharashtra]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Link Road]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Pune]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Home]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddress -->
+        <test-method status="FAIL" signature="verifyAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:amazon.TestAutomation.AppTest@29774679]" name="verifyAddress" duration-ms="3492" started-at="2020-09-10T13:47:16Z" data-provider="AddressData" depends-on-methods="amazon.TestAutomation.AppTest.login" finished-at="2020-09-10T13:47:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestOffice]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8899776655]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[411038]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[First Insight Software Solution Pvt.Ltd]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Lohia Jain IT Park,Kothrud,Pune]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Lohia Jain IT Park]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Pune]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Office]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:24)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:33)
+	at amazon.TestAutomation.AppTest.verifyAddress(AppTest.java:343)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddress -->
+        <test-method status="PASS" signature="suiteTeardown()[pri:0, instance:amazon.TestAutomation.AppTest@29774679]" name="suiteTeardown" is-config="true" duration-ms="1" started-at="2020-09-10T13:47:20Z" finished-at="2020-09-10T13:47:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteTeardown -->
+      </class> <!-- amazon.TestAutomation.AppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
